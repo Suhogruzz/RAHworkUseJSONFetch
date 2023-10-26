@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  margin: 0 auto;
+  padding: 40px;
+  width: 90%;
+  max-width: 1280px;
+  display: flex;
+}
+
+.component {
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-shadow: 6px 6px 6px #ccc;
+  margin-right: 32px;
+}
+.component:last-child {
+  margin-right: 0;
+}
+
+.component-url {
+  margin-bottom: 12px;
+  color: gray;
+}
+
+.component-ok {
+  font-size: 32px;
+  color: green;
+}
+
+.component-load {
+  animation: blink 1s ease infinite alternate-reverse;
+}
+
+.component-error {
+  color: darkred;
+}
+
+@keyframes blink {
+  from { opacity: 0.2; }
+  to { opacity: 1;}
+}
